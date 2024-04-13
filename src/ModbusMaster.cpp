@@ -229,11 +229,11 @@ void ModbusMaster::preTransmission() {
 }
 
 /**
-Function extends the preTransmission functionality, and we can now
+Function extends the postTransmission functionality, and we can now
 inherit the class and override this method.
 
 @see ModbusMaster::ModbusMasterTransaction()
-@see ModbusMaster::preTransmission()
+@see ModbusMaster::postTransmission()
 */
 void ModbusMaster::postTransmission() {
 	if (_postTransmission)
